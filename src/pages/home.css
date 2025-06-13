@@ -1,0 +1,657 @@
+/* ===========================
+   Furniro Homepage - Full CSS
+   =========================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 32px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #e89f71;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.icons span:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.icons img {
+  width: 25px;   /* smaller than before */
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: #fcefdc;
+  padding: 2rem 3rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 10%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  color: #a27017;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  background-color: #a27017;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #8e5f12;
+}
+
+/* Categories Section */
+.categories {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.categories-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.categories-header p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.categories-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 250px;
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.category-card h4 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* Products Section */
+.products {
+  padding: 4rem 6rem;
+  background: #fff;
+  text-align: center;
+}
+
+.products-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.1rem;
+  justify-content: center;
+}
+
+.product-card {
+  background: #f9f9f9;
+  border-radius: 0 !important;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 240px;
+  margin: auto	;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.tag.sale {
+  background-color: #f94c43;
+}
+
+.tag.new {
+  background-color: #1abc9c;
+}
+
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-overlay button {
+  background: white;
+  color: #f9a825;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.hover-actions span {
+  margin: 0 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.product-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.product-info h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.product-info p {
+  font-size: 0.88rem;
+  color: #777;
+  margin: 2px 0;
+}
+
+.price strong {
+  color: #000;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.show-more {
+  margin-top: 2.5rem;
+  padding: 10px 22px;
+  border: 1px solid #c7a66e;
+  background: transparent;
+  color: #c7a66e;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Inspiration Section */
+.inspiration-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff8f2;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.inspiration-content {
+  flex: 1;
+  max-width: 40%;
+}
+
+.inspiration-content h2 {
+  font-size: 32px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.inspiration-content p {
+  color: #8a8a8a;
+  margin-bottom: 24px;
+  max-width: 350px;
+}
+
+.explore-btn {
+  background-color: #b88e2f;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.inspiration-slider {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  max-width: 55%;
+  gap: 12px;
+}
+
+.main-slide {
+  position: relative;
+  width: 55%; /* decreased from 65% */
+}
+
+.main-slide img {
+  width: 90%;
+  height: 550px; /* increased height */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.slide-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 16px 24px;
+}
+
+.slide-caption span {
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.slide-caption h3 {
+  font-size: 18px;
+  color: #3a3a3a;
+  margin: 4px 0;
+}
+
+.slide-btn {
+  background-color: #b88e2f;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.side-slide {
+  position: relative;
+  width: 35%;
+}
+
+.side-slide img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.arrow-btn {
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.slider-dots .dot.active {
+  background-color: #b88e2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inspiration-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .inspiration-content,
+  .inspiration-slider {
+    max-width: 100%;
+  }
+
+  .inspiration-content {
+    margin-bottom: 30px;
+  }
+
+  .main-slide img,
+  .side-slide img {
+    height: auto;
+  }
+
+  .slider-dots {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Instagram Section */
+.furniro-section {
+  padding: 60px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.furniro-header p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.furniro-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.furniro-collage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  padding: 60px 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6;
+}
+
+.footer-links,
+.footer-help,
+.footer-newsletter {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-links h4,
+.footer-help h4,
+.footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #888;
+}
+
+.footer-links ul,
+.footer-help ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-help li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+  cursor: pointer;
+}
+
+.newsletter-form {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  max-width: 260px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background-color: transparent;
+}
+
+.newsletter-form button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+hr {
+  margin: 30px 0 10px;
+  border: 0;
+  height: 1px;
+  background: #eee;
+}
+
+.footer-bottom {
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form button {
+    align-self: flex-start;
+    padding-left: 0;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
