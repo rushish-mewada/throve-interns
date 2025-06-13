@@ -95,8 +95,8 @@ const ProductDetail = () => {
         </div>
 
         <div className="box-image">
-          <img src="https://www.thesofabeds.com/cdn/shop/files/1_53a603a0-e62b-4630-868c-e52c1fa8d6ef.jpg?v=1717752760" width="500" height="500" alt="preview1" />
-          <img src="https://images.woodenstreet.de/image/cache/data%2Fsofa-beds%2Fpluto-fabric-convertible-3-seater-sofa-bed-velvet-chestnut-brown%2FChestnut-brown%2Fnew-logo%2F1-750x650.jpg" width="500" height="500" alt="preview2" />
+          <img src="https://www.thesofabeds.com/cdn/shop/files/1_53a603a0-e62b-4630-868c-e52c1fa8d6ef.jpg?v=1717752760" width="800" height="800" alt="preview1" />
+          <img src="https://images.woodenstreet.de/image/cache/data%2Fsofa-beds%2Fpluto-fabric-convertible-3-seater-sofa-bed-velvet-chestnut-brown%2FChestnut-brown%2Fnew-logo%2F1-750x650.jpg" width="800" height="800" alt="preview2" />
         </div>
       </div>
 
