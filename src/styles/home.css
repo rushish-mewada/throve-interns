@@ -1,0 +1,17 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.logo {
+    display: inline-block;
+    width: 50px;
+    margin: auto;
+    margin-bottom: -1rem;
+}
+
+h1 {
+    display: inline-block;
+    margin: auto;
+}
