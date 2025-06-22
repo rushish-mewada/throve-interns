@@ -1,0 +1,184 @@
+.content {
+    height: auto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.category-images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.category-images img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.category h5 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.products-title {
+    margin-top: 60px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+.product-card {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.product-card img {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.discount {
+    position: absolute;
+    background: #ff6b6b;
+    color: white;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.discount.new {
+    background-color: rgb(92, 175, 147);
+}
+
+.box {
+    height: 80px;
+    background-color: rgb(233, 237, 237);
+    width: 260px;
+    padding: 12px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-info {
+    font-size: 14px;
+    color: #555;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+}
+
+.original-price {
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.inspiration-section {
+    height: 450px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f2f1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.inspiration-content {
+    text-align: left;
+    width: 50%;
+    padding-left: 100px;
+    margin-left: -700px;
+}
+
+.inspiration-content h1 {
+    margin-bottom: 20px;
+}
+
+.inspiration-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: #cba13c;
+    color: white;
+    border: 1px solid #cba13c;
+    cursor: pointer;
+}
+
+.inspiration-images {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.inspiration-img1 {
+    height: 350px;
+    width: 250px;
+}
+
+.inspiration-img2 {
+    height: 300px;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.social-section {
+    margin-top: 130px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-section h2 {
+    margin: 10px 0 30px;
+}
+
+.social-gallery {
+    height: 500px;
+    width: 230%;
+    max-width: 1300px;
+    object-fit: cover;
+}
