@@ -1,0 +1,155 @@
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e9ecef;
+    padding: 60px 0 40px 0;
+    width: 100%;
+}
+
+.furniro h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.links h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-bottom: 30px;
+}
+
+.links h3 {
+    font-size: 28px;
+    color: #2c2c2c;
+}
+
+.links p {
+    color: #9ca3af;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-bottom: 15px;
+}
+
+.links ul li a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.links ul li a:hover {
+    color: #b88e2f;
+}
+
+.newsletter-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-bottom: 2px solid #e5e7eb;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-input:focus {
+    border-bottom-color: #2c2c2c;
+}
+
+.newsletter-input::placeholder {
+    color: #9ca3af;
+}
+
+.subscribe-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #2c2c2c;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c2c2c;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.copyright p {
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: left;
+    }
+    
+    .footer-section.brand {
+        text-align: left;
+    }
+    
+    .newsletter-section {
+        flex-direction: column;
+    }
+    
+    .subscribe-btn {
+        align-self: flex-start;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 0 30px 0;
+    }
+    
+    .footer-container {
+        padding: 0 15px;
+    }
+    
+    .footer-content {
+        margin-bottom: 40px;
+    }
+}

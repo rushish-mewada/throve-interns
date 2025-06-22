@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#navbar {
+    height: 60px;
+    color: black;
+    background-color: white;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    padding: 20px;
+}
+
+#navbar a:hover {
+    color: #b88e2f;
+    transition: color 0.3s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+#logo {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3A3A3A;
+    text-decoration: none;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 55px;
+}
+
+.nav-icons .icon {
+    font-size: 18px;
+    color: black;
+}
